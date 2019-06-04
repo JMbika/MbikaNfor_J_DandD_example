@@ -16,6 +16,13 @@
     //functions
     function switchImage() {
         console.log(this);
+        //grab the corresponing background image (0, 1, 2, 3)
+        //and get it from the images folder (backGround1.jpg as an example)
+        let bgImage = `./images/backGround${this.dataset.puzzleref}.jpg`;
+
+        //set background image style on the dropzone container
+        puzzleBoard.style.backgroundImage = `url(${bgImage})`;
+        //debugger
     }
 
 
